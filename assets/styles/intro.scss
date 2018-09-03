@@ -1,0 +1,10 @@
+.intro {
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__astronaut {
+        max-width: 100%;
+    }
+}

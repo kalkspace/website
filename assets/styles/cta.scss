@@ -1,0 +1,13 @@
+.cta {
+    &__box {
+        border: 1px solid black;
+    }
+
+    &__button {
+        background-color: red;
+        color: white;
+        padding: .5rem 1rem;
+        font-weight: bold;
+        font-size: 1.4rem;
+    }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Marcus Weiner <marcus.weiner@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^4.1.3",
+    "wired-elements": "^0.7.2"
+  },
+  "scripts": {
+    "copy": "cp -r node_modules/wired-elements/dist/* static/js/",
+    "build": "yarn run copy && hugo"
+  }
+}

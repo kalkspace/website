@@ -1,0 +1,12 @@
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>{{ block "title" . }}
+  {{ .Site.Title }}
+{{ end }}</title>
+
+{{ $style := resources.Get "styles/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+<link rel="stylesheet" href="{{ $style.Permalink }}">
+
+<script src="/js/wired-elements.bundled.min.js"></script>
