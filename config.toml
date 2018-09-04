@@ -1,2 +1,5 @@
 languageCode = "en-us"
 title = "My New Hugo Site"
+
+[permalinks]
+pages = ":slug/"
