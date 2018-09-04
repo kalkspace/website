@@ -1,24 +1,32 @@
 .newsletter {
-    wired-input {
+    wired-card {
         flex-grow: 1;
+    }
+
+    input[type=email] {
         height: 3rem;
         font-size: 1.1rem;
-        padding: .75rem;
-        width: auto;
+        padding: .5rem;
+        width: 100%;
+        border: 0;
     }
 
     wired-button {
-        font-weight: bold;
-        position: relative;
-        font-size: 1rem;
-        line-height: 2em;
+        padding: 0;
+        color: white;
+        background-color: red;
 
-        &:after {
-            content: "";
-            background-color: red;
-            position: absolute;
-            top: 0; bottom: 0; left: 0; right: 0;
-            z-index: -1;
+        button {
+            color: white;
+            cursor: pointer;
+            padding: .5rem 1rem;
+            font-weight: bold;
+            position: relative;
+            font-size: 1rem;
+            line-height: 2em;
+            border: none;
+            background: none;
+            height: 100%;
         }
     }
 }
