@@ -11,6 +11,10 @@
   },
   "scripts": {
     "copy": "cp -r node_modules/wired-elements/dist/* static/js/",
-    "build": "yarn run copy && hugo"
+    "styles": "node-sass assets/styles/main.scss -o static/css",
+    "build": "yarn run copy && yarn run styles && hugo"
+  },
+  "devDependencies": {
+    "node-sass": "^4.9.3"
   }
 }

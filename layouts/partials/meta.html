@@ -6,7 +6,6 @@
   {{ .Site.Title }}
 {{ end }}</title>
 
-{{ $style := resources.Get "styles/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
-<link rel="stylesheet" href="{{ $style.Permalink }}">
+<link rel="stylesheet" href="/css/main.css">
 
 <script src="/js/wired-elements.bundled.min.js"></script>
