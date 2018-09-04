@@ -4,9 +4,13 @@
     }
 
     wired-button {
-        background-color: $primary;
-        font-weight: bold;
-        color: white;
-        padding: .5rem 1rem;
+        padding: 0;
+        a {
+          background-color: $primary;
+          font-weight: bold;
+          color: white;
+          text-decoration: none;
+          padding: .5rem 1rem;
+        }
     }
 }
