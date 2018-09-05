@@ -1,5 +1,5 @@
-languageCode = "en-us"
-title = "My New Hugo Site"
+languageCode = "de"
+title = "KalkSpace"
 
 [permalinks]
 pages = ":slug/"

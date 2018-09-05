@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    {{ partial "meta" }}
+    {{ partial "meta" . }}
   </head>
   <body>
-    {{ partial "home/intro" }}
-    {{ partial "home/vision" }}
-    {{ partial "home/cta" }}
-    {{ partial "home/team" }}
-    {{ partial "home/outro" }}
-    {{ partial "footer" }}
+    {{ partial "home/intro" . }}
+    {{ partial "home/vision" . }}
+    {{ partial "home/cta" . }}
+    {{ partial "home/team" . }}
+    {{ partial "home/outro" . }}
+    {{ partial "footer" . }}
   </body>
 </html>

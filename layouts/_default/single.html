@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    {{ partial "meta" }}
+    {{ partial "meta" . }}
   </head>
   <body>
     <div class="container py-3">
         {{ .Content }}
     </div>
-    {{ partial "footer" }}
+    {{ partial "footer" . }}
   </body>
 </html>
