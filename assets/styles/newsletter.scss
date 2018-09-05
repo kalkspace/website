@@ -1,3 +1,5 @@
+@import "colors";
+
 .newsletter {
     wired-card {
         flex-grow: 1;
@@ -13,8 +15,9 @@
 
     wired-button {
         padding: 0;
+        background-color: $primary !important;
+        opacity: 1 !important;
         color: white;
-        background-color: $primary;
 
         button {
             color: white;
