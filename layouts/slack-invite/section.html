@@ -1,0 +1,23 @@
+{{ define "content" }}
+    {{ $functions_base := "/.netlify/functions" }}
+    {{ if .Site.IsServer }}
+        {{ $functions_base = "http://localhost:9000" }}
+    {{ end }}
+
+    <a href="{{ .Site.Home.Permalink }}" title="Zur Startseite">Zurück</a>
+
+    <div class="container-narrow">
+        <h2>{{ .Title }}</h2>
+
+        {{ .Content }}
+
+        <form action="{{ $functions_base }}/slack-invite" method="POST" class="vertical-form d-flex flex-lg-row flex-column">
+            <wired-card class="d-block">
+                <input type="email" name="email" placeholder="Deine E-Mail-Adresse" />
+            </wired-card>
+            <wired-button class="d-block"><button type="submit">
+                Beitreten
+            </button></wired-button>
+        </form>
+    </div>
+{{ end }}
