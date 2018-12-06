@@ -4,3 +4,7 @@ resources/
 
 static/js/
 static/css/
+
+# Backend
+/functions/
+.env

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {{ partial "meta" . }}
+  </head>
+  <body>
+    {{ block "main" . }}
+    <div class="container py-3">
+      {{ block "content" . }}
+        {{ .Content }}
+      {{ end }}
+    </div>
+    {{ end }}
+    {{ block "footer" . }}
+      {{ partial "footer" . }}
+    {{ end }}
+  </body>
+</html>
