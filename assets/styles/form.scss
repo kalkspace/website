@@ -1,6 +1,6 @@
 @import "colors";
 
-.newsletter {
+.vertical-form {
     wired-card {
         flex-grow: 1;
     }
@@ -30,6 +30,7 @@
             border: none;
             background: none;
             height: 100%;
+            width: 100%;
         }
     }
 }
