@@ -21,7 +21,9 @@
     "build:site": "yarn run copy && yarn run styles && hugo",
     "build": "run-p -s --aggregate-output build:**",
     "serve:backend": "netlify-lambda serve backend",
-    "watch": "hugo server & node-sass assets/styles/main.scss -o static/css -w"
+    "watch": "run-p -s watch:**",
+    "watch:hugo": "hugo server",
+    "watch:sass": "node-sass assets/styles/main.scss -o static/css -w"
   },
   "devDependencies": {
     "aws-sdk": "^2.371.0",
