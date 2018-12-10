@@ -3,12 +3,15 @@
         <div class="col-lg-6 col-md-5">
             <img class="intro__astronaut" src="/img/astronaut_sofa.svg" alt="Astronaut im Raumanzug, gezeichnet">
         </div>
-        <div class="col-lg-6 col-md-7 d-flex flex-column justify-content-around">
+        <div class="col-lg-6 col-md-7 d-flex flex-column justify-content-between">
             <h1>
                 Kalk Space
-                <small class="d-block">Coworking</small>
+                <small class="d-block plain">Coworking</small>
             </h1>
-            {{ partial "newsletter" }}
+            <div>
+                <h4 class="plain">Zum Newsletter anmelden</h4>
+                {{ partial "newsletter" }}
+            </div>
         </div>
     </div>
 </div>
