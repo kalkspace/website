@@ -21,7 +21,7 @@
     "build:site": "yarn run copy && yarn run styles && hugo",
     "build": "run-p -s --aggregate-output build:**",
     "serve:backend": "netlify-lambda serve backend",
-    "watch": "run-p -s watch:**",
+    "watch": "run-p -s styles watch:**",
     "watch:hugo": "hugo server",
     "watch:sass": "node-sass assets/styles/main.scss -o static/css -w"
   },
