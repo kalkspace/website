@@ -1,0 +1,12 @@
+.main-menu {
+  color: $primary;
+  display: flex;
+  justify-content: flex-end;
+  padding: 3rem;
+
+  a {
+    padding-left: 3rem;
+    font-size: 1.8rem;
+  }
+}
+

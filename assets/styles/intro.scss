@@ -1,14 +1,32 @@
 .intro {
-    min-height: 50vh;
+    min-height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    color: white;
 
     &__astronaut {
         max-width: 100%;
     }
 
-    h1 small {
-        font-size: 50%;
+    h1 {
+        small {
+            font-size: 50%;
+        }
+        @media (max-width: map-get($grid-breakpoints, md)) {
+            font-size: 3rem;
+        }
+    }
+
+    h4 {
+        @media (max-width: map-get($grid-breakpoints, md)) {
+            font-size: 1.25rem;
+        }
+    }
+
+    wired-card {
+        color: black;
+        background-color: white;
+        margin-right: .5rem;
     }
 }

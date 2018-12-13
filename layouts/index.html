@@ -4,7 +4,10 @@
     {{ partial "meta" . }}
   </head>
   <body>
-    {{ partial "home/intro" . }}
+    <div class="wrapper space-one">
+      {{ partial "home/menu" . }}
+      {{ partial "home/intro" . }}
+    </div>
     {{ partial "home/vision" . }}
     {{ partial "home/cta" . }}
     {{ partial "home/team" . }}
