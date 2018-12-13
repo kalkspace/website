@@ -1,5 +1,5 @@
 .intro {
-    min-height: 60vh;
+    min-height: 20vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -10,6 +10,8 @@
     }
 
     h1 {
+        font-size: 5rem;
+
         small {
             font-size: 50%;
         }
