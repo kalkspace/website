@@ -4,11 +4,18 @@
     {{ partial "meta" . }}
   </head>
   <body>
-    {{ partial "home/intro" . }}
-    {{ partial "home/vision" . }}
-    {{ partial "home/cta" . }}
+    <div class="wrapper space-one">
+      {{ partial "home/menu" . }}
+      {{ partial "home/intro" . }}
+    </div>
+    {{ partial "home/about" . }}
+    {{ partial "home/coworking" . }}
+    {{ partial "home/community" . }}
     {{ partial "home/team" . }}
-    {{ partial "home/outro" . }}
-    {{ partial "footer" . }}
+    {{ partial "home/vision" . }}
+    <div class="wrapper space-one">
+      {{ partial "home/outro" . }}
+      {{ partial "footer" . }}
+    </div>
   </body>
 </html>
