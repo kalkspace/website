@@ -1,14 +1,17 @@
-<div class="container intro">
+<div class="container intro py-5">
     <div class="row">
         <div class="col-lg-6 col-md-5">
-            <img class="intro__astronaut" src="/img/astronaut_sofa.svg" alt="Astronaut im Raumanzug, gezeichnet">
+            <img class="intro__astronaut px-4 pb-4 px-lg-5" src="/img/astronaut_sofa.svg" alt="Astronaut im Raumanzug, gezeichnet">
         </div>
-        <div class="col-lg-6 col-md-7 d-flex flex-column justify-content-around">
-            <h1>
-                Kalk Space
-                <small class="d-block">Coworking</small>
+        <div class="col-lg-6 col-md-7 d-flex flex-column justify-content-between">
+            <h1 class="mb-5">
+                KalkSpace
+                <small class="d-block plain">Coworking Community</small>
             </h1>
-            {{ partial "newsletter" }}
+            <div>
+                <h4 class="plain">Zum Newsletter anmelden</h4>
+                {{ partial "newsletter" }}
+            </div>
         </div>
     </div>
 </div>
