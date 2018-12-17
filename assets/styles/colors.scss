@@ -3,4 +3,9 @@ $primary: #FF9505;
 .space-one {
   background-image: url(../img/space.jpg);
   background-size: cover;
+  color: white;
+}
+
+.bg-primary {
+  background-color: $primary !important;
 }
