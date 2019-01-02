@@ -1,18 +1,6 @@
 @import "colors";
 
-.vertical-form {
-    wired-card {
-        flex-grow: 1;
-    }
-
-    input[type=email] {
-        height: 3rem;
-        font-size: 1.1rem;
-        padding: .5rem;
-        width: 100%;
-        border: 0;
-    }
-
+.vertical-form, .long-form {
     wired-button {
         padding: 0;
         background-color: $primary !important;
@@ -32,5 +20,46 @@
             height: 100%;
             width: 100%;
         }
+    }
+}
+
+.vertical-form {
+    wired-card {
+        flex-grow: 1;
+    }
+
+    input[type=email] {
+        height: 3rem;
+        font-size: 1.1rem;
+        padding: .5rem;
+        width: 100%;
+        border: 0;
+    }
+}
+
+.long-form {
+    &.narrow {
+        max-width: 40rem;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 2.6rem;
+        margin-bottom: 1.5rem;
+    }
+
+    > p {
+        margin-bottom: 1.5rem;
+    }
+
+    wired-input {
+        height: 4rem;
+        font-size: 1.1rem;
+        padding: 1rem;
+        width: 100%;
+    }
+
+    aside {
+        font-size: 0.9rem;
     }
 }
