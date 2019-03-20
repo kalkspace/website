@@ -1,0 +1,16 @@
+
+{{ define "main" }}
+    <div class="wrapper space-one">
+      {{ partial "home/menu" . }}
+    </div>
+    <div class="container py-3">
+    <ul>
+    {{ range .Pages }}
+        <li>
+            {{ $url := urls.Parse .Permalink }}
+            <a href="{{ $url.Path }}">{{.Date.Format "02.01.2006"}} | {{.Title}}</a>
+        </li>
+    {{ end }}
+    </ul>
+    </div>
+{{ end }}
