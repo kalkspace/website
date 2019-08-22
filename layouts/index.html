@@ -15,7 +15,7 @@
     {{ partial "home/vision" . }}
     <div class="wrapper space-one">
       {{ partial "home/outro" . }}
-      {{ partial "footer" . }}
+      {{ partial "footer" (dict "Page" .Page ) }}
     </div>
   </body>
 </html>
