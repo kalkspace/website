@@ -5,4 +5,10 @@ a {
   &:hover {
     color: $primary;
   }
+
+  &.homelink {
+    width: 100%;
+    font-family: "Permanent Marker", cursive;
+    color: white;
+  }
 }
