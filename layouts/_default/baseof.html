@@ -7,12 +7,12 @@
     {{ block "main" . }}
     <div class="container py-3">
       {{ block "content" . }}
-        {{ .Content }}
+      {{ .Content }}
       {{ end }}
     </div>
     {{ end }}
     {{ block "footer" . }}
-      {{ partial "footer" . }}
+    {{ partial "footer" (dict "Page" .Page "Background" false ) }}
     {{ end }}
   </body>
 </html>
