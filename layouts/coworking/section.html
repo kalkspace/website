@@ -1,28 +1,33 @@
 {{ define "content" }}
 <div class="container py-6">
-  <section class="row align-items-center">
-    <div class="col-6">
+  <section class="row justify-content-between align-items-center">
+    <div class="col-sm-12 col-md-8">
       Als Verein machen wir Coworking ein bisschen anders. Weniger Geld gegen
       Ware, unpersönlich, anonym, und mehr Teil des Vereins und Space werden.
       Wir haben Fix Desks in einem abgeschlossenen Raum für 250€/Monat
       Mitgliedsbeitrag und Flex Desks im offenen Raum für 100€/Monat
       Mitgliedsbeitrag.
     </div>
-    <div class="col-6">
-      <img src="https://placekitten.com/400/300" alt="die katz" />
+    <div class="col-sm-12 col-md-3">
+      <img src="/img/construction_astro.svg" class="img-fluid" alt="drawing of two construction astronauts" />
     </div>
   </section>
-  <section class="row py-2 align-items-center">
-    <div class="col-6">
-      <img src="https://placekitten.com/400/300?1=3" alt="die katz" />
-    </div>
-    <div class="col-6">
-      Wie du mitmachen kannst? Schreib uns ne Mail oder komm mittwochs ab 20.00
-      im Café Hopla um uns kennenzulernen.
+  <section class="row py-4 align-items-center justify-content-between">
+    <div class="d-none d-md-flex col-md-3">
+        <img src="/img/construction_astro.svg" class="img-fluid" alt="drawing of two construction astronauts" />
+      </div>
+    <div class="col-sm-12 col-md-8">
+      <p>
+        Unser Space liegt am Anfang der Olpener Straße auf der Schäl Sick. Also fast in Kalk.
+      </p>
+      <p>
+          Wie du mitmachen kannst? Schreib uns ne Mail oder komm mittwochs ab 20.00
+          im Café Hopla um uns kennenzulernen.
+      </p>
     </div>
   </section>
   <section class="row justify-content-center">
-    <div class="col-4 just py-5 text-center">
+    <div class="col-8 col-sm-6 just py-5 text-center">
       <p>
         Hast du Interesse?
       </p>
@@ -37,11 +42,13 @@
 {{ end }}
 
 {{ define "left-intro" }}
-<img
-  class="intro__astronaut px-4 pb-4 px-lg-5"
-  src="/img/astronaut_sofa.svg"
-  alt="Astronaut im Raumanzug, gezeichnet"
-/>
+<div class="text-center">
+  <img
+    class="intro__astronaut-sm px-4 pb-4 px-lg-5"
+    src="/img/working_astro_white.svg"
+    alt="Astronaut im Raumanzug, gezeichnet"
+  />
+</div>
 {{ end }}
 
 {{ define "right-intro" }}
