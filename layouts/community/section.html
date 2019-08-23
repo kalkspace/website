@@ -1,24 +1,21 @@
 {{ define "content" }}
 <div class="container py-6">
-  <section class="row align-items-center">
-    <div class="col-6">
-      <img src="https://placekitten.com/400/300?7" alt="die katz" />
-    </div>
-    <div class="col-6">
+    <section class="row py-4 align-items-center justify-content-between">
+        <div class="col-sm-12 col-md-3">
+          <img src="/img/friend_astros.svg" class="img-fluid" alt="Zwei Astronauten beim Arbeiten" />
+        </div>
+        <div class="col-sm-12 col-md-8">
       Als Vereinsmitglied (für 60€/jährlich Mitgliedsbeitrag) kannst du unsere
       Räumlichkeiten nutzen, um von Yoga Kursen bis zum Repair Cafe alles ins
       Leben zu rufen, wonach dir der Sinn steht.
     </div>
   </section>
-  <section class="row py-6">
-    <div class="col-6">
-      <div>
+  <section class="row py-4 align-items-center justify-content-between">
+      <div class="col-sm-12 col-md-8">
         <p>
           Ein paar Beispiele bestehender Initiativen:
         </p>
-      </div>
-      <div>
-        <ol>
+        <ul>
           <li>Buchclub</li>
           <li>
             <a
@@ -48,21 +45,22 @@
               >KalkSpace Hörspiel Podcast</a
             >
           </li>
-        </ol>
+        </ul>
       </div>
-    </div>
-    <div class="col-6">
-      <img src="https://placekitten.com/400/200?17=1" alt="die katz" />
-    </div>
+      <div class="col-sm-12 col-md-4">
+        <img src="/img/flying_cat.svg" class="img-fluid" alt="Zwei Astronauten beim Arbeiten" />
+      </div>
   </section>
   <section class="row">
+    <div class="col">
     <p>
       Wir suchen Macher*innen. Du hast eine Idee? Du setzt sie um. Do-ocracy ist
       unsere Maxime.
     </p>
+  </div>
   </section>
   <section class="row justify-content-center">
-    <div class="col-4 just py-4 text-center">
+    <div class="col-8 col-sm-6 just py-4 text-center">
       <p>
         Lust mitzumachen?
       </p>
@@ -75,6 +73,16 @@
       </div>
     </div>
   </section>
+</div>
+{{ end }}
+
+{{ define "left-intro" }}
+<div class="text-center">
+  <img
+    class="intro__astronaut-sm px-4 pb-4 px-lg-5 img-fluid"
+    src="/img/buddy_astros_white.svg"
+    alt="Astronauten, die sich umarmen"
+  />
 </div>
 {{ end }}
 
