@@ -8,6 +8,7 @@
     {{ block "main" . }}
     <div class="wrapper space-one">
       {{ partial "header.html" . }}
+      {{ block "intro" . }}
       <div class="container intro py-5">
         <div class="row">
           <div class="col-lg-6 col-md-5">
@@ -35,6 +36,7 @@
           </div>
         </div>
       </div>
+      {{ end }}
     </div>
     <div>
       {{ block "content" . }}
