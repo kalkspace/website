@@ -4,9 +4,22 @@
   justify-content: flex-end;
   padding: 3rem;
 
+  @media (max-width: 750px) {
+    padding: 1rem;
+  }
+
   a {
     padding-left: 3rem;
     font-size: 1.8rem;
+
+    &:first-of-type {
+      padding-left: 0;
+    }
+
+    @media (max-width: 750px) {
+      font-size: 1rem;
+      padding-left: .5rem;
+    }
   }
 }
 

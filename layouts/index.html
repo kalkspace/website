@@ -1,21 +1,6 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    {{ partial "meta" . }}
-  </head>
-  <body>
-    <div class="wrapper space-one">
-      {{ partial "header.html" . }}
-      {{ partial "home/intro" . }}
-    </div>
-    {{ partial "home/about" . }}
-    {{ partial "home/coworking" . }}
-    {{ partial "home/community" . }}
-    {{ partial "home/team" . }}
-    {{ partial "home/vision" . }}
-    <div class="wrapper space-one">
-      {{ partial "home/outro" . }}
-      {{ partial "footer" . }}
-    </div>
-  </body>
-</html>
+{{ define "content"}}
+{{ partial "home/about" . }}
+{{ partial "home/vision" . }}
+{{ partial "home/diversity" . }}
+{{ partial "home/team" . }}
+{{ end }}

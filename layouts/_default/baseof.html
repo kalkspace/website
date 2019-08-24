@@ -1,18 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
   <head>
     {{ partial "meta" . }}
   </head>
   <body>
     {{ block "main" . }}
-    <div class="container py-3">
+    <div class="wrapper space-one">
+      {{ partial "header.html" . }}
+      {{ block "intro" . }}
+      <div class="container intro py-5">
+        <div class="row">
+          <div class="col-lg-6 col-md-5">
+            {{ block "left-intro" . }}
+            <img
+              class="intro__astronaut px-4 pb-4 px-lg-5"
+              src="/img/astronaut_sofa.svg"
+              alt="Astronaut im Raumanzug, gezeichnet"
+            />
+            {{ end }}
+          </div>
+          <div
+            class="col-lg-6 col-md-7 d-flex flex-column justify-content-between"
+          >
+            {{ block "right-intro" . }}
+            <h1 class="mb-5">
+              KalkSpace
+              <small class="d-block plain">Coworking Community</small>
+            </h1>
+            <div>
+              <h4 class="plain">Zum Newsletter anmelden</h4>
+              {{ partial "newsletter" }}
+            </div>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+    <div>
       {{ block "content" . }}
-        {{ .Content }}
+      {{ .Content }}
       {{ end }}
     </div>
     {{ end }}
     {{ block "footer" . }}
-      {{ partial "footer" . }}
+    {{ partial "footer" (dict "Page" .Page) }}
     {{ end }}
   </body>
 </html>

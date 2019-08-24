@@ -1,12 +1,9 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    {{ partial "meta" . }}
-  </head>
-  <body>
-    <div class="container py-3">
-        {{ .Content }}
-    </div>
-    {{ partial "footer" . }}
-  </body>
-</html>
+{{ define "intro" }}
+<!-- nix -->
+{{ end }}
+
+{{ define "content" }}
+<div class="container py-3">
+  {{ .Content }}
+</div>
+{{ end }}

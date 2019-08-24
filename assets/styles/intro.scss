@@ -1,5 +1,4 @@
 .intro {
-    min-height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -7,6 +6,11 @@
 
     &__astronaut {
         max-width: 100%;
+    }
+
+    &__astronaut-sm {
+        max-height: 30vh;
+        width: auto;
     }
 
     h1 {
