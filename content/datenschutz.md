@@ -7,9 +7,8 @@ slug: "datenschutz"
 <br>
 </p><h3 id="dsg-general-controller">Verantwortlicher</h3><p><span class="tsmcontroller">
 KalkSpace e.V.<br>
-z.Hd Christine Gotthardt<br>
-Robertstr. 24<br>
-51105 Köln<br>
+Olpener Str. 33<br>
+51103 Köln<br>
 Deutschland<br>
 <br>
 E-Mail: hallo@kalk.space<br>
