@@ -5,20 +5,20 @@ slug: "impressum"
 # Impressum
 
 Anbieter:<br>
-Andreas Streichardt<br>
-Feldstr. 4<br>
+KalkSpace e.V.<br>
+Olpener Str. 33<br>
 51103 Köln
 
 Kontakt:<br>
-Telefon: 01577-1979427<br>
+Telefon: 0221-98653919<br>
 E-Mail: hallo@kalk.space<br>
 Website: https://kalk.space/
 
 Bei redaktionellen Inhalten:<br>
  <br>
 Verantwortlich nach § 55 Abs.2 RStV<br>
-Andreas Streichardt<br>
-Feldstr. 4<br>
+KalkSpace e.V.<br>
+Olpener Str. 33<br>
 51103 Köln
 
 ## Credits
