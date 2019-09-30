@@ -1,3 +1,17 @@
+.news {
+    &__imagerow {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    &__img {
+        max-width: 45%;
+        margin: 1rem;
+    }
+}
+
 .subnote {
     font-size: 1rem;
 }
