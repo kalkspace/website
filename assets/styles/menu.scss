@@ -16,10 +16,13 @@
       padding-left: 0;
     }
 
-    @media (max-width: 750px) {
+    @media (max-width: 850px) {
       font-size: 1rem;
       padding-left: .5rem;
     }
+
+    @media (max-width: 450px) {
+      font-size: .75rem;
+    }
   }
 }
-
