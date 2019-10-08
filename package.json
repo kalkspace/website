@@ -17,10 +17,8 @@
   "scripts": {
     "copy": "cp -r node_modules/wired-elements/dist/* static/js/ && cp -r node_modules/@webcomponents/webcomponentsjs/* static/js/",
     "styles": "node-sass assets/styles/main.scss -o static/css",
-    "build:backend": "netlify-lambda build backend",
     "build:site": "yarn run copy && yarn run styles && hugo",
     "build": "run-p -s --aggregate-output build:**",
-    "serve:backend": "netlify-lambda serve backend",
     "watch": "run-p -s styles watch:**",
     "watch:hugo": "hugo server",
     "watch:sass": "node-sass assets/styles/main.scss -o static/css -w"
