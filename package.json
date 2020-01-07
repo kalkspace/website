@@ -18,9 +18,9 @@
   "scripts": {
     "copy": "cp -r node_modules/wired-elements/dist/* static/js/ && cp -r node_modules/@webcomponents/webcomponentsjs/* static/js/",
     "styles": "node-sass assets/styles/main.scss -o static/css",
-    "build:site": "yarn run copy && yarn run styles && hugo",
+    "build:site": "yarn run copy && hugo",
     "build": "run-p -s --aggregate-output build:**",
-    "watch": "run-p -s styles watch:**",
+    "watch": "run-p -s watch:**",
     "watch:hugo": "hugo server",
     "watch:sass": "node-sass assets/styles/main.scss -o static/css -w"
   },
