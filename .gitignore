@@ -5,6 +5,8 @@ resources/
 static/js/
 static/css/
 
+/assets/js/vendor/
+
 # Backend
 /functions/
 .env

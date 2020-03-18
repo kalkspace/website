@@ -4,5 +4,4 @@
   functions = "functions"
 
 [build.environment]
-  HUGO_VERSION = "0.48"
-  AWS_LAMBDA_JS_RUNTIME = "nodejs8.10"
+  HUGO_VERSION = "0.67.1"
