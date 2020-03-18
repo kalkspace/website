@@ -5,4 +5,3 @@
 
 [build.environment]
   HUGO_VERSION = "0.67.1"
-  AWS_LAMBDA_JS_RUNTIME = "nodejs8.10"
