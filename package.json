@@ -11,7 +11,7 @@
     "wired-elements": "^0.7.2"
   },
   "scripts": {
-    "copy": "cp -r node_modules/{wired-elements/dist,@webcomponents/webcomponentsjs}/* assets/js/vendor/",
+    "copy": "cp -r node_modules/wired-elements/dist/* node_modules/@webcomponents/webcomponentsjs/* assets/js/vendor/",
     "build:site": "hugo --minify",
     "build": "run-s copy build:site",
     "develop": "run-s copy watch:site",
