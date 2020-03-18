@@ -14,7 +14,11 @@
 {{ end }}
 </title>
 
-<link rel="stylesheet" href="/css/main.css">
+{{ $sass := resources.Get "styles/main.scss" }}
+{{ $style := $sass | resources.ToCSS | resources.Minify }}
+<link rel="stylesheet" href="{{ $style.Permalink }}">
 
-<script src="/js/webcomponents-loader.js"></script>
-<script src="/js/wired-elements.bundled.min.js"></script>
+{{ $wcLoader := resources.Get "js/vendor/webcomponents-loader.js" }}
+{{ $wiredElements := resources.Get "js/vendor/wired-elements.bundled.min.js" }}
+{{ $js := slice $wcLoader $wiredElements | resources.Concat "js/bundle.js" }}
+<script src="{{ $js.Permalink }}"></script>

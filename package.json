@@ -15,13 +15,11 @@
     "wired-elements": "^0.7.2"
   },
   "scripts": {
-    "copy": "cp -r node_modules/wired-elements/dist/* static/js/ && cp -r node_modules/@webcomponents/webcomponentsjs/* static/js/",
-    "styles": "node-sass assets/styles/main.scss -o static/css",
-    "build:site": "yarn run copy && yarn run styles && hugo",
-    "build": "run-p -s --aggregate-output build:**",
-    "watch": "run-p -s styles watch:**",
-    "watch:hugo": "hugo server",
-    "watch:sass": "node-sass assets/styles/main.scss -o static/css -w"
+    "copy": "cp -r node_modules/{wired-elements/dist,@webcomponents/webcomponentsjs}/* assets/js/vendor/",
+    "build:site": "hugo --minify",
+    "build": "run-s copy build:site",
+    "develop": "run-s copy watch:site",
+    "watch:site": "hugo server"
   },
   "devDependencies": {
     "aws-sdk": "^2.371.0",
