@@ -5,11 +5,11 @@
 <link rel="apple-touch-icon" type="image/png" href="/img/logo_180x180.png">
 <meta property="og:image" content="/img/logo_square_fb.png">
 <meta name="description" content="Coworking-Community auf der Schäl Sick">
-
-{{ range .AlternativeOutputFormats -}}
-    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
-{{ end -}}
-
+{{ if eq .Type "blog" }}
+  {{ range .AlternativeOutputFormats -}}
+      {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+  {{ end -}}
+{{ end }}
 <title>
 {{ if eq .Path "_index.md" }}
   {{ .Site.Title }}
