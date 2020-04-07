@@ -1,0 +1,26 @@
+{{ define "content" }}
+    <div class="container pt-md-5">
+        {{ .Content }}
+        {{ partial "comments" . }} 
+    </div>
+{{ end }}
+
+{{ define "left-intro" }}
+<div class="pl-3 pl-lg-5">
+    <h2>Blog</h2>
+    <p>
+    Der KalkSpace Blog, alles News und Neugikeiten rund um den Kalkspace.
+    </p>
+</div>
+{{ end }}
+
+{{ define "right-intro" }}
+
+<div class="text-center">
+    <img
+        class="events__astro px-4 pb-4 px-lg-5"
+        src="/img/flying_cat_white.svg"
+        alt="Astronaut auf Katze, gezeichnet"
+    />
+</div>
+{{ end }}
