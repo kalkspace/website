@@ -1,7 +1,5 @@
 $spacer: 1rem;
-$spacers: (
-    6: ($spacer * 4.5)
-);
+$spacers: (6: ($spacer * 4.5));
 
 @import "../../node_modules/bootstrap/scss/bootstrap-reboot.scss";
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
@@ -22,3 +20,4 @@ $spacers: (
 @import "news";
 @import "foerder";
 @import "events";
+@import "blog";

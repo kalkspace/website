@@ -1,19 +1,3 @@
-{{ define "content" }}
-    <div class="container pt-md-5">
-	<h3 class="py-5 text-center">Hier findest du alle unsere Blog Einträge</h3>
-     </div>
-    <div class="container py-3">
-    <ul class="text-center">
-    {{ range .Pages }}
-        <li>
-            {{ $url := urls.Parse .Permalink }}
-            <a href="{{ $url.Path }}">{{.Date.Format "02.01.2006"}} | {{.Title}}</a>
-        </li>
-    {{ end }}
-    </ul>
-    </div>
-{{ end }}
-
 {{ define "left-intro" }}
 <div class="pl-3 pl-lg-5">
     <h2>Blog</h2>
@@ -33,3 +17,24 @@
     />
 </div>
 {{ end }}
+
+{{ define "content" }}
+    <div class="container pt-md-5">
+	<h3 class="py-5 text-center">Hier findest du alle unsere Blog-Einträge</h3>
+     </div>
+    <div class="container py-3 d-flex">
+
+    {{ range $index, $post := .Pages }}
+
+            {{ $url := urls.Parse .Permalink }}
+            <a class="blog-teaser" title="{{.Title}}" href="{{ $url.Path }}">
+            <img src="/img/cats/sticker{{add (mod $index 5) 1}}.png">
+            <span class="blog-date">{{.Date.Format "02.01.2006"}}</span>
+            <h4>{{.Title}}</h4>
+            </a>
+
+    {{ end }}
+
+    </div>
+{{ end }}
+
