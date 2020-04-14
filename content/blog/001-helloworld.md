@@ -8,4 +8,4 @@ Dies ist kein Wordpress.
 
 Ausser weiter seiern.
 
-Tja. Ob es wohl einen RSS Feed gibt?
+Wir haben ja jetzt auch einen RSS Feed. Danke Christian!
