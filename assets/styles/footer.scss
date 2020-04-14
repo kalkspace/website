@@ -3,4 +3,11 @@
         margin-right: auto;
         color: white;
     }
+
+    a {
+        @media (max-width: 1050px) {
+        font-size: 1rem;
+        padding-left: .5rem;
+        }
+    }
 }

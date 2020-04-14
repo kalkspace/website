@@ -6,24 +6,13 @@
     </div>
     <div class="container borderPrimary my-5">
         <div class="py-3">
-          <h3 class='plain py-3'>
-            <b>Corona Update</b>
-          </h3>
-          <h3 class='plain py-3'>Der KalkSpace in Corona Zeiten</h3>
-          <p>
-            Natürlich ist der Space im Moment, wie ein Großteil des öffentlichen Lebens, lahmgelegt. Und das ist auch gut und richtig so. Wir diskutieren gerade im Forum, ob EINZELN Coworken im Space eine Option ist. Mehr dazu <a href="https://discuss.kalk.space/t/kalkspace-zum-solo-coworken-oeffnen/214" rel="noreferrer">hier.</a>
-          </p>
-          <p>
-            Damit du nicht einsam wirst, haben wir einen Teil unserer Veranstaltungen in die Weiten des Internets verlegt. Dazu nutzen wir einen Whereby Raum, der uns lieberweise von <a href="https://railslove.com/" rel="noreferrer">Railslove</a> zur Verfügung gestellt wird (grazie mille!). Den Zugang bekommst du per Slack, Mail, Forum ,etc.
-          </p>
-          <h3 class='plain py-3'>Was findet statt:</h3>
-          <ul>
-            <li>Dienstags ab 19.00: Web Development für Einsteiger:innen und Fortgeschrittene.</li>
-            <li>Mittwochs ab 19.30: Lightning Talks statt Plenum. Wer mag, kann zu einem beliebigen Thema 5 Minuten was erzählen. "Beliebig" nehmen wir ernst. Du kannst über dein Lieblingsfahrrad, Wandern, Rust, Feminismus, etc. reden. Oder Gitarre spielen.</li>
-            <li>spontane Events (z.B. Einführung in Pen und Paper Rollenspiele) werden im Forum und Slack bekanntgegeben. Also schaut immer mal wieder rein.</li>
-          </ul>
-          <h3 class='plain py-3'>Ein bisschen gute Nachrichten</h3>
-          <p>Nach monatelangem Hin und Her mit der Versicherung haben wir endlich neuen Boden im Space. Und er ist sooo schön geworden. Schaut mal <a href="https://www.instagram.com/p/B-Kgf4hH-s4/" rel="noreferrer">hier.</a></p>
+            {{ $blogPages :=  where .Site.Pages "Section" "blog"}}
+            {{ $blogPages = where $blogPages "Kind" "page" }}
+            {{ $blogPages = sort $blogPages "Date" "desc" }}
+            {{ $latestBlogPost := index $blogPages 0 }}
+            <h2 class="plain">{{ $latestBlogPost.Title }}</h2>
+            <div class="plain">{{ $latestBlogPost.Content }}</div>
+            <a href="{{ (.Site.GetPage "section" "blog").Permalink }}">weiterlesen...</a>
         </div>
       </div>
     </div>
