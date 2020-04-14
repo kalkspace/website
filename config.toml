@@ -3,3 +3,4 @@ title = "KalkSpace"
 
 [permalinks]
 pages = ":slug/"
+blog = "/blog/:year/:month/:title/"
