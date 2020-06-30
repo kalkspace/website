@@ -6,6 +6,8 @@ date: 2020-06-30T00:00:00.000Z
 
 Wie so viele Menschen haben wir uns in den letzten Wochen in vielen Video- und Telefonkonferenzen rumgetrieben. Auch unsere Vereinsaktivität hat sich ins Internet verlagert. Irgendwie sind wir dann über BigBlueButton gestolpert (danke @ divoc und meeten.statt-drosseln.de!) und dachten: das wollen wir auch!
 
+![](/images/uploads/bildschirmfoto-von-2020-06-10-21-18-06.png)
+
 BigBlueButton ist open source, ein Link reicht, um es benutzen zu können, es lässt sich datensparsam einrichten, und es HAT EIN WHITEBOARD, AUF DEM ZUSAMMEN RUMGEMALT WERDEN KANN!
 
 Ja, BigBlueButton ist nicht perfekt, aber in einigen Punkten schon cool. Und so begab es sich, dass sich drei Menschen verabredeten, um das mal zu besprechen. Am Ende der „Besprechung“ gab es dann eine Test-Instanz, die benutzbar war. Und dann ging das Graben in den Einstellungen los. Zwar gibt es tollerweise eine ziemlich [ausführliche Doku](https://docs.bigbluebutton.org) zum Aufsetzen und Konfigurieren, leider haben wir trotzdem immer wieder geloggte Daten gefunden, die nicht da sein sollten. Die Herausforderung haben wir angenommen, ganz durch sind wir noch nicht, aber es wird…
