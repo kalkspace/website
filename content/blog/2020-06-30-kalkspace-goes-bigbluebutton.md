@@ -2,7 +2,7 @@
 title: KalkSpace goes BigBlueButton
 date: 2020-06-30T00:00:00.000Z
 ---
-** tldr: wir haben eine BigBlueButton-Instanz aufgesetzt und ihr könnt sie benutzen: [bbb.kalk.space](https://bbb.kalk.space)**
+**tldr: wir haben eine BigBlueButton-Instanz aufgesetzt und ihr könnt sie benutzen: [bbb.kalk.space](https://bbb.kalk.space)**
 
 Wie so viele Menschen haben wir uns in den letzten Wochen in vielen Video- und Telefonkonferenzen rumgetrieben. Auch unsere Vereinsaktivität hat sich ins Internet verlagert. Irgendwie sind wir dann über BigBlueButton gestolpert (danke @ divoc und meeten.statt-drosseln.de!) und dachten: das wollen wir auch!
 
