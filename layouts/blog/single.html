@@ -1,6 +1,6 @@
 {{ define "left-intro" }}
 <div class="pl-3 pl-lg-5">
-    <h1>{{ .Title }}</h1>
+    <h1>{{ .Title | htmlUnescape }}</h1>
     <span>{{ .Date.Format "02.01.2006" }}</span>
 </div>
 {{ end }}
@@ -14,7 +14,7 @@
 {{ define "content" }}
     <div class="container pt-md-5 my-5 blog-content">
         {{ .Content }}
-        {{ partial "comments" . }} 
+        {{ partial "comments" . }}
         <a href="/blog" title="unser Blog">zurück zur Übersicht</a>
     </div>
 {{ end }}
