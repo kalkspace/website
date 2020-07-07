@@ -1,5 +1,6 @@
 ---
-title: KalkSpace goes BigBlueButton
+title: KalkSpace goes BigBlue&shy;Button
+slug: kalkspace-goes-bigbluebutton
 date: 2020-06-30T00:00:00.000Z
 ---
 
