@@ -29,4 +29,8 @@
 
 .blog-content {
     min-height: 45vh;
+
+    img {
+        max-width: 100%;
+    }
 }
