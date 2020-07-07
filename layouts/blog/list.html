@@ -27,10 +27,10 @@
     {{ range $index, $post := .Pages }}
 
             {{ $url := urls.Parse .Permalink }}
-            <a class="blog-teaser" title="{{.Title}}" href="{{ $url.Path }}">
+            <a class="blog-teaser" title="{{.Title | htmlUnescape }}" href="{{ $url.Path }}">
             <img src="/img/cats/sticker{{add (mod $index 5) 1}}.png">
             <span class="blog-date">{{.Date.Format "02.01.2006"}}</span>
-            <h4>{{.Title}}</h4>
+            <h4>{{.Title | htmlUnescape}}</h4>
             </a>
 
     {{ end }}

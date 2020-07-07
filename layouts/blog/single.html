@@ -1,6 +1,6 @@
 {{ define "left-intro" }}
 <div class="pl-3 pl-lg-5">
-    <h1>{{ .Title }}</h1>
+    <h1>{{ .Title | htmlUnescape }}</h1>
     <span>{{ .Date.Format "02.01.2006" }}</span>
 </div>
 {{ end }}
