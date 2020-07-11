@@ -4,7 +4,7 @@
     {{ $posts:= slice }}
     {{ range seq 5 }}
         {{ if ne $before -1 }}
-            {{ $content:=getJSON (printf "https://discuss.kalk.space/posts.json?api_key=e7bcf2108d4eebf85047a1c587c1a66828b559b83159027d813bb62f67fbe059&before=%.0f&1" $before) }}
+            {{ $content:=getJSON (printf "https://discuss.kalk.space/posts.json?before=%.0f&1" $before) }}
             {{ $current_posts:= index $content "latest_posts" }}
             {{ if eq (len $current_posts) 0 }}
                 {{ $before:=-1 }}
