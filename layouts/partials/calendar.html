@@ -1,0 +1,32 @@
+<div>
+
+    {{ $before:= 0 | float }}
+    {{ $posts:= slice }}
+    {{ range seq 5 }}
+        {{ if ne $before -1 }}
+            {{ $content:=getJSON (printf "https://discuss.kalk.space/posts.json?api_key=e7bcf2108d4eebf85047a1c587c1a66828b559b83159027d813bb62f67fbe059&before=%.0f&1" $before) }}
+            {{ $current_posts:= index $content "latest_posts" }}
+            {{ if eq (len $current_posts) 0 }}
+                {{ $before:=-1 }}
+            {{ else }}
+                {{ $before = index (index (last 1 $current_posts) 0) "id" }}
+                {{ $filtered_posts:= where $current_posts "event" "!=" nil }}
+                {{ $posts = $posts | append $filtered_posts }}
+            {{ end }}
+        {{ end }}
+    {{ end }}
+
+    {{ $events:= apply $posts "index" "." "event" }}
+    {{ range where $events "is_expired" false }}
+    <div style="padding: 10px; background-color: bisque;">
+        <div style="font-weight: bold;">
+            <a href="https://discuss.kalk.space{{ .post.url }}">{{ .name | default .post.topic.title }}</a>
+        </div>
+        <div>
+            {{ $event_time:= time .starts_at }}
+            {{ dateFormat "Monday, 2. Jan 2006 - 15:04" $event_time }}
+        </div>
+    </div>
+    {{ end }}
+
+</div>
