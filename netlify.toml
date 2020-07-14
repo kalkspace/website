@@ -5,3 +5,4 @@
 
 [build.environment]
   HUGO_VERSION = "0.67.1"
+  TZ = "Europe/Berlin"
