@@ -1,25 +1,27 @@
 ---
 title: "Impressum"
 slug: "impressum"
+
 ---
 # Impressum
 
-Anbieter:<br>
-KalkSpace e.V.<br>
-Olpener Str. 33<br>
+Anbieter:
+{{< hardWraps >}}
+KalkSpace e.V.
+Olpener Str. 33
 51103 Köln
 
-Kontakt:<br>
-Telefon: 0221-98653919<br>
-E-Mail: hallo@kalk.space<br>
+Kontakt:
+Telefon: 0221-98653919
+E-Mail: hallo@kalk.space
 Website: https://kalk.space/
 
-Bei redaktionellen Inhalten:<br>
- <br>
-Verantwortlich nach § 55 Abs.2 RStV<br>
-KalkSpace e.V.<br>
-Olpener Str. 33<br>
+Bei redaktionellen Inhalten:
+Verantwortlich nach § 55 Abs.2 RStV
+KalkSpace e.V.
+Olpener Str. 33
 51103 Köln
+{{< /hardWraps >}}
 
 ## Credits
 
