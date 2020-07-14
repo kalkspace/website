@@ -1,8 +1,9 @@
 {{ define "content" }}
 <div class="container pt-md-5">
     <h3 class="py-5 text-center">Hier findest du alle unsere öffentlichen Events</h3>
-    <section class="d-flex justify-content-center">
-            <iframe src="https://calendar.google.com/calendar/embed?src=veuv8rdah18ve2fdp35um24670%40group.calendar.google.com&ctz=Europe%2FBerlin" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>    </section>
+    <section class="d-flex justify-content-center">            
+        {{ partial "calendar.html" . }}
+    </section>
     <section class="py-5">
         <h3 class="text-center">Du möchtest selber ein Event im KalkSpace veranstalten?</h3>
         <p>
