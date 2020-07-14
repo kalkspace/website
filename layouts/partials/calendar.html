@@ -17,14 +17,15 @@
     {{ end }}
 
     {{ $events:= apply $posts "index" "." "event" }}
-    {{ range where $events "is_expired" false }}
-    <div style="padding: 10px; background-color: bisque;">
-        <div style="font-weight: bold;">
-            <a href="https://discuss.kalk.space{{ .post.url }}">{{ .name | default .post.topic.title }}</a>
-        </div>
+    {{ $sorted_events:= sort $events "starts_at" "asc"}}
+    {{ range where $sorted_events "is_expired" false }}
+    <div class="event-wrapper">
         <div>
-            {{ $event_time:= time .starts_at }}
-            {{ dateFormat "Monday, 2. Jan 2006 - 15:04" $event_time.Local }}
+          {{ $event_time:= time .starts_at }}
+          {{ dateFormat "Monday, 2. Jan 2006 - 15:04" $event_time.Local }}
+        </div>
+        <div class="event-title">
+            <a href="https://discuss.kalk.space{{ .post.url }}">{{ .name | default .post.topic.title }}</a>
         </div>
     </div>
     {{ end }}

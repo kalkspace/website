@@ -1,0 +1,14 @@
+.event-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  :first-child {
+    padding-right: .5rem;
+  }
+  &:not(:last-child) {
+    border-bottom: 1px solid black;
+  }
+}
+
+.event-title {
+  font-weight: bold;
+}
