@@ -11,7 +11,7 @@ Woche endlich die Zusage, dass wir gefördert werden!
 
 Wie bei uns üblich haben wir transparent für alle diskutiert, wie genau wir das Fahrrad im Verein nutzen wollen:
 
-https://discuss.kalk.space/t/nutzung-lastenrad/348
+[zum Forumsthread](https://discuss.kalk.space/t/nutzung-lastenrad/348)
 
 Herausgekommen ist die Variante, dass Vereinsmitglieder das Rad komplett kostenfrei (auch für nicht Vereinszwecke)
 nutzen können.
@@ -34,7 +34,9 @@ Veranstaltungen, Grilltransport in den Park bei Plena im Sommer usw. usf. Zusät
 Corona hat uns als Community leider finanziell schwer getroffen und wir haben aktuell einen absoluten Minimalbetrieb.
 Daher hoffen wir, dass ihr diese Idee genauso gut findet wie wir und rufen hiermit zu Spenden auf:
 
-https://www.betterplace.org/de/projects/83728-kalkspace-offener-community-raum-in-kalk
+[KalkSpace auf betterplace.org](https://www.betterplace.org/de/projects/83728-kalkspace-offener-community-raum-in-kalk)
 
 Wir müssen jetzt innerhalb von 3 Monaten genug Geld zusammenbekommen, um ein Lastenrad zu bestellen und damit dann
-die Förderung zu bekommen.
+die Förderung zu bekommen und wir hoffen, dass wir jetzt genug Spenden bekommen, um das möglich zu machen.
+
+Danke im Voraus für eure Unterstützung!
