@@ -21,7 +21,7 @@
 <meta name="description" content="Coworking-Community auf der Schäl Sick" />
 {{ if eq .Type "blog" }}
   {{ range .AlternativeOutputFormats -}}
-    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+    <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .RelPermalink }}" title="{{ $.Site.Title }}" />
   {{ end -}}
 {{ end }}
 <title>
