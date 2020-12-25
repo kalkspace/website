@@ -4,7 +4,24 @@
 <link rel="icon" type="image/png" href="/img/icon_32x32.png" />
 <link rel="apple-touch-icon" type="image/png" href="/img/logo_180x180.png" />
 
+<title>
+  {{ if eq .Path "_index.md" }}
+    {{ .Site.Title }}
+  {{ else }}
+    {{ .Title }} | {{ .Site.Title }}
+  {{ end }}
+</title>
+
+{{ $desc := .Summary }}
+{{ if not $desc }}{{ $desc = "Coworking-Community auf der Schäl Sick" }}{{ end }}
+<meta name="description" content="{{ $desc }}" />
+
 <!-- OpenGraph -->
+<meta property="og:url" content='{{ getenv "DEPLOY_PRIME_URL" }}{{ .RelPermalink }}' />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@kalkspace" />
+
 {{ $teaser := .Resources.GetMatch "teaser" }}
 {{ if not $teaser }}
   {{/* Fallback*/}}
@@ -18,19 +35,12 @@
 <meta property="og:image:height" content="{{ .Height }}" />
 {{ end }}
 
-<meta name="description" content="Coworking-Community auf der Schäl Sick" />
+
 {{ if eq .Type "blog" }}
   {{ range .AlternativeOutputFormats -}}
     <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .RelPermalink }}" title="{{ $.Site.Title }}" />
   {{ end -}}
 {{ end }}
-<title>
-  {{ if eq .Path "_index.md" }}
-    {{ .Site.Title }}
-  {{ else }}
-    {{ .Title }} | {{ .Site.Title }}
-  {{ end }}
-</title>
 
 {{ $sass := resources.Get "styles/main.scss" }}
 {{ $style := $sass | resources.ToCSS | resources.Minify }}
