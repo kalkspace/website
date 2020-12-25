@@ -1,5 +1,6 @@
 ---
 title: "KalkSpace auf der rC3: Panel zu Freiräumen"
+slug: rc3-panel-freiraeume
 date: 2020-12-25T00:00:00.000Z
 ---
 
