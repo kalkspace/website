@@ -4,7 +4,7 @@ slug: rc3-panel-freiraeume
 date: 2020-12-25T00:00:00.000Z
 ---
 
-_Vom 27. - 30. Dezember 2020 findet die [Remote Chaos Experience (rC3)](https://rc3.world/) statt. Der KalkSpace beteiligt sich mit einer Assembly und veranstaltet ein Panel zu Freiräumen_
+_Vom 27. - 30. Dezember 2020 findet die [Remote Chaos Experience (rC3)](https://rc3.world/) statt. Der KalkSpace beteiligt sich mit einer Assembly und veranstaltet ein Panel zu Freiräumen._
 
 **Freiräume: Hacken, Gärtnern, Feminismus**
 
