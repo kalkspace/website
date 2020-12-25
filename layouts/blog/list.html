@@ -28,7 +28,12 @@
 
             {{ $url := urls.Parse .Permalink }}
             <a class="blog-teaser" title="{{.Title | htmlUnescape }}" href="{{ $url.Path }}">
+            {{ $teaser := $post.Resources.GetMatch "teaser" }}
+            {{ if $teaser }}
+            <img src="{{ $teaser.RelPermalink }}">
+            {{ else }}
             <img src="/img/cats/sticker{{add (mod $index 5) 1}}.png">
+            {{ end }}
             <span class="blog-date">{{.Date.Format "02.01.2006"}}</span>
             <h4>{{.Title | htmlUnescape}}</h4>
             </a>
