@@ -1,22 +1,26 @@
-@import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Raleway:400,400i,700,700i&subset=latin-ext');
+@import url("https://fonts.googleapis.com/css?family=Permanent+Marker|Raleway:400,400i,700,700i&subset=latin-ext");
 
 body {
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.3rem;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.3rem;
 }
 
-h1, h2, h3, h4 {
-    font-family: 'Permanent Marker', cursive;
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Permanent Marker", cursive;
 }
 
 h1 {
-    font-size: 4rem;
+  font-size: 4rem;
 }
 
 h2 {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
-.plain, .plain * {
-    font-family: 'Raleway', sans-serif;
+.plain,
+.plain * {
+  font-family: "Raleway", sans-serif;
 }

@@ -16,7 +16,7 @@ Wie bei uns üblich haben wir transparent für alle diskutiert, wie genau wir da
 Herausgekommen ist die Variante, dass Vereinsmitglieder das Rad komplett kostenfrei (auch für nicht Vereinszwecke)
 nutzen können.
 
-Nachdem wir in einer kleinen Gruppe bei den netten Menschen von [Cologne Cargo Bike](https://www.colognecargo.bike/) 
+Nachdem wir in einer kleinen Gruppe bei den netten Menschen von [Cologne Cargo Bike](https://www.colognecargo.bike/)
 vorbeigefahren sind und uns mehrere Räder angeschaut hatten kam schlussendlich das
 [Yuba Electric Supermarché](https://yubabikes.eu/cargobikestore/yuba-electric-supermarche/) heraus.
 

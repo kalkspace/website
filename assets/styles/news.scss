@@ -1,26 +1,26 @@
 .news {
-    &__imagerow {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        align-items: center;
-    }
+  &__imagerow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
 
-    &__img {
-        max-width: 45%;
-        margin: 1rem;
-    }
+  &__img {
+    max-width: 45%;
+    margin: 1rem;
+  }
 
-    &__solo_img {
-        width: 70%;
-        margin: 1rem;
-    }
+  &__solo_img {
+    width: 70%;
+    margin: 1rem;
+  }
 }
 
 .subnote {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 .borderPrimary {
-    border: 2px solid $primary;
+  border: 2px solid $primary;
 }
