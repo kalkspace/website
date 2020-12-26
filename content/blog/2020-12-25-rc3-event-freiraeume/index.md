@@ -11,6 +11,8 @@ _Vom 27. - 30. Dezember 2020 findet die [Remote Chaos Experience (rC3)](https://
 
 **Freiräume: Hacken, Gärtnern, Feminismus**
 
+_tl;dr: Am **29.12.** findet **von 14 bis 16 Uhr** ein Panel statt, bei dem sich Gruppen die Freiräume betreiben, mit dem warum und wie beschäftigen - [Video-Link](https://bbb.kalk.space/b/kal-xeo-nok)._
+
 Freiräume sind was Schönes: selbstverwaltet, rumhängen ohne Konsumzwang, Räume für unkommerzielle Treffen und Party, Raum zum Ausprobieren und Basteln. Das klingt nach Jugendzentrum, Stadtteilzentrum oder Hackspace? Ja, diese können Freiräume sein oder haben den Anspruch, Freiräume zu sein.
 
 Aber was sind Freiräume darüber hinaus? Gibt es nicht schon genug davon? Sind sie anstrengend oder extrem wichtig? Oder beides?
