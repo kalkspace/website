@@ -1,13 +1,13 @@
 .footer {
-    span {
-        margin-right: auto;
-        color: white;
-    }
+  span {
+    margin-right: auto;
+    color: white;
+  }
 
-    a {
-        @media (max-width: 1050px) {
-        font-size: 1rem;
-        padding-left: .5rem;
-        }
+  a {
+    @media (max-width: 1050px) {
+      font-size: 1rem;
+      padding-left: 0.5rem;
     }
+  }
 }

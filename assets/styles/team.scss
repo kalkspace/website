@@ -1,22 +1,22 @@
 .team {
-    &__avatar {
-        border-radius: 50%;
-        height: 10rem;
-        display: block;
-        margin: 0 auto 1rem;
-    }
+  &__avatar {
+    border-radius: 50%;
+    height: 10rem;
+    display: block;
+    margin: 0 auto 1rem;
+  }
 
-    p {
-        font-size: 1rem;
-        max-width: 30rem;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
+  p {
+    font-size: 1rem;
+    max-width: 30rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-    &__name {
-        font-size: 1.2rem !important;
-        font-weight: bold;
-        text-align: center;
-    }
+  &__name {
+    font-size: 1.2rem !important;
+    font-weight: bold;
+    text-align: center;
+  }
 }

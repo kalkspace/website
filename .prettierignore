@@ -1,1 +1,6 @@
+node_modules
+public
+resources
+assets/js/vendor
+
 layouts/**/*.html
