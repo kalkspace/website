@@ -18,7 +18,7 @@
                 wrapper.setAttribute("class", "event-wrapper");
 
                 var timeDiv = document.createElement("div");
-                timeDiv.textContent = time.toLocaleDateString() + " " + time.toLocaleTimeString();
+                timeDiv.textContent = time.toLocaleDateString() + " " + time.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
                 wrapper.appendChild(timeDiv);
 
                 var titleDiv = document.createElement("div");
