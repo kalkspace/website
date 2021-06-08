@@ -46,7 +46,7 @@ const handler: Handler = async (event) => {
   if (payload?.post?.post_number === 1) {
     // This is the initial post of the topic
 
-    const discourseBuildHook = process?.env?.DISCOURSE_WEBHOOK_SECRET;
+    const discourseBuildHook = process?.env?.DISCOURSE_BUILD_HOOK;
     if (!discourseBuildHook) {
       throw new Error("Missing DISCOURSE_BUILD_HOOK");
     }
