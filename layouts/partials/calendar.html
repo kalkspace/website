@@ -38,6 +38,12 @@
                 container.appendChild(wrapper);
             });
         })
-        .catch(console.error.bind(console))
+        .catch(function(err) {
+            console.error(err);
+            var errDiv = document.createElement('div');
+            errDiv.textContent = "Error: " + err;
+
+            container.appendChild(errDiv);
+        })
     </script>
 </div>
