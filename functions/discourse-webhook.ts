@@ -1,4 +1,7 @@
 import { Handler } from "@netlify/functions";
+import { createHmac } from "crypto";
+
+const hmac = createHmac("sha256", process.env.DISCOURSE_WEBHOOK_SECRET);
 
 interface Payload {
   post: {
@@ -7,7 +10,21 @@ interface Payload {
 }
 
 const handler: Handler = async (event, context) => {
-  console.log(event.headers["X-Discourse-Event-Signature"]);
+  const headerName = "X-Discourse-Event-Signature";
+  const [, expected] =
+    Object.entries(event.headers).find(
+      ([key]) => key.toLowerCase() === headerName.toLowerCase()
+    ) ?? [];
+
+  hmac.update(event.body);
+  const hashedPayload = hmac.digest("hex");
+  const actual = `sha256=${hashedPayload}`;
+
+  if (actual !== expected) {
+    return {
+      statusCode: 403,
+    };
+  }
 
   const payload = JSON.parse(event.body) as Payload;
 
@@ -16,6 +33,8 @@ const handler: Handler = async (event, context) => {
   } else {
     console.log("Anderer Post", payload);
   }
+
+  console.log(hmac.digest("hex"));
 
   return {
     statusCode: 200,
