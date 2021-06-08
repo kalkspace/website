@@ -1,8 +1,6 @@
 import { Handler } from "@netlify/functions";
 import { createHmac } from "crypto";
 
-const hmac = createHmac("sha256", process.env.DISCOURSE_WEBHOOK_SECRET);
-
 interface Payload {
   post: {
     post_number: number;
@@ -16,6 +14,7 @@ const handler: Handler = async (event, context) => {
       ([key]) => key.toLowerCase() === headerName.toLowerCase()
     ) ?? [];
 
+  const hmac = createHmac("sha256", process.env.DISCOURSE_WEBHOOK_SECRET);
   hmac.update(event.body);
   const hashedPayload = hmac.digest("hex");
   const actual = `sha256=${hashedPayload}`;
