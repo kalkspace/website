@@ -6,12 +6,15 @@
             return eventsResponse.json();
         })
         .then(function(result) {
-            result.events.filter(function(event) {
+            var futureEvents = result.events.filter(function(event) {
                 {{/* use yesterday's date for comparison so we don't filter out currently running events */}}
                 var yesterday = (new Date()) - 24*60*60*1000;
                 return new Date(event.starts_at) > yesterday;
-            })
-            .forEach(function(event) {
+            });
+
+            futureEvents.sort(function(a, b) { return a.starts_at > b.starts_at});
+
+            futureEvents.forEach(function(event) {
                 var time = (new Date(event.starts_at));
 
                 var wrapper = document.createElement("div");
