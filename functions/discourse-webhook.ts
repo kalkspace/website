@@ -7,7 +7,10 @@ interface Payload {
 }
 
 const handler: Handler = async (event, context) => {
+  console.log(event.headers["X-Discourse-Event-Signature"]);
+
   const payload = JSON.parse(event.body) as Payload;
+
   if (payload.post.post_number === 1) {
     console.log("Erster Post", payload);
   } else {
