@@ -51,7 +51,12 @@ const handler: Handler = async (event) => {
       throw new Error("Missing DISCOURSE_BUILD_HOOK");
     }
     const response = await fetch(discourseBuildHook);
-    if (!response.ok) {
+    if (response.ok) {
+      console.info("Triggered build", {
+        status: response.status,
+        body: await response.text(),
+      });
+    } else {
       console.error("Triggering build failed", {
         status: response.status,
         body: await response.text(),
