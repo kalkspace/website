@@ -9,3 +9,5 @@ static/css/
 
 # Backend
 .env
+
+/.vscode/
