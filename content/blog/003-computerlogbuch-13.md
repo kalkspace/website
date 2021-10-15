@@ -1,5 +1,6 @@
 ---
-title: Computerlogbuch des KalkSpace #13
+title: Computerlogbuch des KalkSpace \#13
+slug: computerlogbuch-13
 date: 2021-10-15
 ---
 
@@ -29,7 +30,7 @@ Um den Betrieb des Space auch weiterhin zu sichern und auch das ein oder andere 
 
 ## Remote Chaos Communication Congress im KalkSpace
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/2017-12-28_Leipzig%2C_34c3%2C_Fairy_Dust_%28freddy2001%29_-_denoised_and_pixelized.jpg/800px-2017-12-28_Leipzig%2C_34c3%2C_Fairy_Dust_%28freddy2001%29_-_denoised_and_pixelized.jpg" alt="Bild der Fairydust Rakete in den beleuchteten Leipziger Messehallen" style="max-width: 100%">
+![Bild der Fairydust Rakete in den beleuchteten Leipziger Messehallen](https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/2017-12-28_Leipzig%2C_34c3%2C_Fairy_Dust_%28freddy2001%29_-_denoised_and_pixelized.jpg/800px-2017-12-28_Leipzig%2C_34c3%2C_Fairy_Dust_%28freddy2001%29_-_denoised_and_pixelized.jpg)
 
 Traditionell findet jedes Jahr zwischen Weihnachten und Sylvester der Chaos Communication Congress mit tausenden Menschen in Leipzig statt. Dieses Mal findet der [Congress zum zweiten Mal online, beziehungsweise in Hybridform statt](https://events.ccc.de/2021/10/13/remote-chaos-experience/). Und zwar vom 27.12. bis 30.12.
 
@@ -45,7 +46,7 @@ Im oberen Teil des KalkSpace wird es an allen vier Tagen eine breite Reihe Works
 
 ### Mitmachen & Teilnehmen
 
-<img src="https://events.ccc.de/media/rc2021_rc3_lobby.png" alt="Screenshot der rC3 Welt in 8bit Stil" style="max-width: 100%">
+![Screenshot der rC3 Welt in 8bit Stil](https://events.ccc.de/media/rc2021_rc3_lobby.png)
 
 Wir brauchen Hilfe beim Organisieren und Durchführen der Workshops. Also wenn du eine Idee hast, meld dich gern [im Forum](https://discuss.kalk.space/t/konzept-1rc3-2021/608) oder [montags ab 8 beim Plenum](https://discuss.kalk.space/t/plenum/275).
 
