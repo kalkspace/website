@@ -8,19 +8,19 @@ Liebe\*r Freund\*in des KalkSpace,
 
 wir hoffen, dass du die letzten anderthalb Jahre ok überstanden hast. Es war lange ruhig im KalkSpace, und - wie viele Vereine - hat auch uns die Corona Zeit ein wenig gebeutelt. Aber wir sind noch hier. Und langsam fahren wir im KalkSpace wieder die Systeme hoch. Was heißt das ganz konkret:
 
-## Coworking
+### Coworking
 
 Aktuell können bis zu 6 Personen gleichzeitig im KalkSpace arbeiten. Wir stellen Schnelltests im Space zur Verfügung.
 
-## DeepSpace
+### DeepSpace
 
 Unser DeepSpace ist ab dem 01.11. wieder für Gruppen nutzbar. Um den DeepSpace zu nutzen, musst du dir ein plausibles Hygienekonzept überlegen und montags abends ab 8 im Plenum vorstellen.
 
-## Digitale Bildung
+### Digitale Bildung
 
 Wir streben eine Kooperation mit der Kaiserin-Theophanu-Schule in Kalk an, um uns aktiver im Bereich der digitalen Bildung von Kindern in Kalk einzubringen. Wer Interesse am Mitwirken hat, meldet sich gerne!
 
-## Spenden
+### Spenden
 
 Wie oben bereits erwähnt waren wir als Coworking Verein ohne Coworking durchaus betroffen von Corona. Dank der unglaublichen Solidarität einiger Partner\*innen und Coworker\*innen sind wir immer noch da. Danke <3
 
@@ -28,7 +28,7 @@ Um den Betrieb des Space auch weiterhin zu sichern und auch das ein oder andere 
 
 [Im Forum gibt es Infos zum Spenden.](https://discuss.kalk.space/t/spenden-how-to/337)
 
-## Remote Chaos Communication Congress im KalkSpace
+### Remote Chaos Communication Congress im KalkSpace
 
 ![Bild der Fairydust Rakete in den beleuchteten Leipziger Messehallen](https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/2017-12-28_Leipzig%2C_34c3%2C_Fairy_Dust_%28freddy2001%29_-_denoised_and_pixelized.jpg/800px-2017-12-28_Leipzig%2C_34c3%2C_Fairy_Dust_%28freddy2001%29_-_denoised_and_pixelized.jpg)
 
@@ -36,11 +36,11 @@ Traditionell findet jedes Jahr zwischen Weihnachten und Sylvester der Chaos Comm
 
 Hybrid können wir ja mittlerweile alle. Deshalb werden wir als dezentraler, kleiner Teil am rC3 teilnehmen. Dabei planen wir folgendes:
 
-### DeepSpace
+#### DeepSpace
 
 Es wird den ganzen Tag einen Stream der verschiedenen Vorträge, Waffeln, Tschunk und Mate im DeepSpace geben. Zusätzlich finden verschiedene Programmpunkte statt, zum Beispiel eine [Hebo-Con](https://media.ccc.de/v/36c3-10776-hebocon), Quiz-Night, ein Panel zum Thema "Kalk-Connection" und eine kleine LAN-Party.
 
-### WorkSpace
+#### WorkSpace
 
 Im oberen Teil des KalkSpace wird es an allen vier Tagen eine breite Reihe Workshops zu verschienen Themen geben. Geplant sind unter anderem Workshops zum Thema Löten, Fluchen, Schrott-Roboter-Basteln für die Hebo-Con, Medienkunst and viel, viel mehr.
 
