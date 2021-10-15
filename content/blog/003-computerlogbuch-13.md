@@ -1,5 +1,5 @@
 ---
-title: Computerlogbuch des KalkSpace \#13
+title: Computerlogbuch des KalkSpace Nr.13
 slug: computerlogbuch-13
 date: 2021-10-15
 ---
