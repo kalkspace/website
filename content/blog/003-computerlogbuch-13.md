@@ -1,4 +1,9 @@
-# Liebe\*r Freund\*in des KalkSpace,
+---
+title: Computerlogbuch des KalkSpace #13
+date: 2021-10-15
+---
+
+Liebe\*r Freund\*in des KalkSpace,
 
 wir hoffen, dass du die letzten anderthalb Jahre ok überstanden hast. Es war lange ruhig im KalkSpace, und - wie viele Vereine - hat auch uns die Corona Zeit ein wenig gebeutelt. Aber wir sind noch hier. Und langsam fahren wir im KalkSpace wieder die Systeme hoch. Was heißt das ganz konkret:
 
