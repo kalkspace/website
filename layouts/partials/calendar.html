@@ -1,33 +1,57 @@
-<div>
+<div id="events-container">
+    <script type="text/javascript">
+        var container = document.querySelector("#events-container");
+        fetch("https://discuss.kalk.space/discourse-post-event/events.json")
+        .then(function(eventsResponse) {
+            return eventsResponse.json();
+        })
+        .then(function(result) {
+            var futureEvents = result.events.filter(function(event) {
+                {{/* use yesterday's date for comparison so we don't filter out currently running events */}}
+                var yesterday = (new Date()) - 24*60*60*1000;
+                return new Date(event.starts_at) > yesterday;
+            });
 
-    {{ $before:= 0 | float }}
-    {{ $posts:= slice }}
-    {{ range seq 5 }}
-        {{ if ne $before -1 }}
-            {{ $content:=getJSON (printf "https://discuss.kalk.space/posts.json?before=%.0f&1" $before) }}
-            {{ $current_posts:= index $content "latest_posts" }}
-            {{ if eq (len $current_posts) 0 }}
-                {{ $before:=-1 }}
-            {{ else }}
-                {{ $before = index (index (last 1 $current_posts) 0) "id" }}
-                {{ $filtered_posts:= where $current_posts "event" "!=" nil }}
-                {{ $posts = $posts | append $filtered_posts }}
-            {{ end }}
-        {{ end }}
-    {{ end }}
+            futureEvents.sort(function(a, b) {
+                if (a.starts_at < b.starts_at) {
+                    return -1;
+                } else if (a.starts_at > b.starts_at) {
+                    return 1;
+                } else {
+                    return 0;
+                }
+            });
 
-    {{ $events:= apply $posts "index" "." "event" }}
-    {{ $sorted_events:= sort $events "starts_at" "asc"}}
-    {{ range where $sorted_events "is_expired" false }}
-    <div class="event-wrapper">
-        <div>
-          {{ $event_time:= time .starts_at }}
-          {{ dateFormat "Monday, 2. Jan 2006 - 15:04" $event_time.Local }}
-        </div>
-        <div class="event-title">
-            <a href="https://discuss.kalk.space{{ .post.url }}">{{ .name | default .post.topic.title }}</a>
-        </div>
-    </div>
-    {{ end }}
+            futureEvents.forEach(function(event) {
+                var time = (new Date(event.starts_at));
 
+                var wrapper = document.createElement("div");
+                wrapper.setAttribute("class", "event-wrapper");
+
+                var timeDiv = document.createElement("div");
+                timeDiv.textContent = time.toLocaleDateString() + " " + time.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+                wrapper.appendChild(timeDiv);
+
+                var titleDiv = document.createElement("div");
+                titleDiv.setAttribute("class", "event-title");
+                wrapper.appendChild(titleDiv);
+
+                var link = document.createElement("a");
+                {{/* url is safe I hope */}}
+                link.setAttribute("href", "https://discuss.kalk.space/" + event.post.url);
+                {{/* using textContent and not innerHTML should be safe hopefully */}}
+                link.textContent = event.post.topic.title;
+                titleDiv.appendChild(link);
+
+                container.appendChild(wrapper);
+            });
+        })
+        .catch(function(err) {
+            console.error(err);
+            var errDiv = document.createElement('div');
+            errDiv.textContent = "Error: " + err;
+
+            container.appendChild(errDiv);
+        })
+    </script>
 </div>

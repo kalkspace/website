@@ -1,26 +1,50 @@
-<meta charset="utf-8">
-<meta http-equiv="x-ua-compatible" content="ie=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" type="image/png" href="/img/icon_32x32.png">
-<link rel="apple-touch-icon" type="image/png" href="/img/logo_180x180.png">
-<meta property="og:image" content="/img/logo_square_fb.png">
-<meta name="description" content="Coworking-Community auf der Schäl Sick">
+<meta charset="utf-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="icon" type="image/png" href="/img/icon_32x32.png" />
+<link rel="apple-touch-icon" type="image/png" href="/img/logo_180x180.png" />
+
+<title>
+  {{ if eq .Path "_index.md" }}
+    {{ .Site.Title }}
+  {{ else }}
+    {{ .Title }} | {{ .Site.Title }}
+  {{ end }}
+</title>
+
+{{ $desc := .Summary }}
+{{ if not $desc }}{{ $desc = "Coworking-Community auf der Schäl Sick" }}{{ end }}
+<meta name="description" content="{{ $desc }}" />
+
+<!-- OpenGraph -->
+<meta property="og:url" content='{{ getenv "DEPLOY_PRIME_URL" }}{{ .RelPermalink }}' />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@kalkspace" />
+
+{{ $teaser := .Resources.GetMatch "teaser" }}
+{{ if not $teaser }}
+  {{/* Fallback*/}}
+  {{ $teaser = (resources.Get "images/logo_square.png").Resize "x400 jpg" }}
+{{ else }}
+{{ $teaser = $teaser.Resize "1200x jpg" }}
+{{ end }}
+{{ with $teaser }}
+<meta property="og:image" content="{{ .RelPermalink }}" />
+<meta property="og:image:width" content="{{ .Width }}" />
+<meta property="og:image:height" content="{{ .Height }}" />
+{{ end }}
+
+
 {{ if eq .Type "blog" }}
   {{ range .AlternativeOutputFormats -}}
-      {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+    <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .RelPermalink }}" title="{{ $.Site.Title }}" />
   {{ end -}}
 {{ end }}
-<title>
-{{ if eq .Path "_index.md" }}
-  {{ .Site.Title }}
-{{ else }}
-  {{ .Title }} | {{ .Site.Title }}
-{{ end }}
-</title>
 
 {{ $sass := resources.Get "styles/main.scss" }}
 {{ $style := $sass | resources.ToCSS | resources.Minify }}
-<link rel="stylesheet" href="{{ $style.Permalink }}">
+<link rel="stylesheet" href="{{ $style.Permalink }}" />
 
 {{ $wcLoader := resources.Get "js/vendor/webcomponents-loader.js" }}
 {{ $wiredElements := resources.Get "js/vendor/wired-elements.bundled.min.js" }}

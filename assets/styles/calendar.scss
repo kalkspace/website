@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   :first-child {
-    padding-right: .5rem;
+    padding-right: 0.5rem;
   }
   &:not(:last-child) {
     border-bottom: 1px solid black;

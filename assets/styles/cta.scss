@@ -1,14 +1,14 @@
 .cta {
-    &__button {
-        background-color: $primary;
-        color: white;
-        padding: .5rem 1rem;
-        font-weight: bold;
-        font-size: 1.4rem;
+  &__button {
+    background-color: $primary;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    font-size: 1.4rem;
 
-        a {
-            color: white;
-            text-decoration: none;
-        }
+    a {
+      color: white;
+      text-decoration: none;
     }
+  }
 }

@@ -8,5 +8,6 @@ static/css/
 /assets/js/vendor/
 
 # Backend
-/functions/
 .env
+
+/.vscode/

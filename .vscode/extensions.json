@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "bungcip.better-toml",
+    "casualjim.gotemplate",
+    "yzhang.markdown-all-in-one"
+  ]
+}
