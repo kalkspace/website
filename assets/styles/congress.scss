@@ -1,0 +1,78 @@
+& {
+  padding: 2em;
+
+  .wrapper {
+    margin: 0 auto;
+    max-width: 50ch;
+  }
+
+  color: #092047;
+  background-color: #ffffff;
+
+  @media (prefers-color-scheme: dark) {
+    color: #e8eaed;
+    background-color: #202124;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 1em;
+  font-family: "Press Start 2P";
+
+  @media (prefers-color-scheme: dark) {
+    color: #defe47;
+  }
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+a,
+.date {
+  color: #fe00fe;
+}
+
+.astronaut {
+  position: absolute;
+  z-index: -1;
+
+  animation-duration: 20s;
+  animation-name: astronaut;
+  animation-iteration-count: infinite;
+}
+
+@keyframes astronaut {
+  0% {
+    transform: rotate(0);
+  }
+
+  25% {
+    transform: rotate(90deg) translateY(10px) scale(0.8);
+  }
+
+  50% {
+    transform: rotate(-90deg) translateX(100px) scale(0.4);
+  }
+
+  75% {
+    transform: rotate(40deg) translateX(100px) scale(0.8);
+  }
+
+  100% {
+    transform: rotate(0) scale(1);
+  }
+}
