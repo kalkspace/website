@@ -26,3 +26,7 @@ $spacers: (
 @import "events";
 @import "blog";
 @import "calendar";
+
+.congress {
+  @import "congress";
+}
