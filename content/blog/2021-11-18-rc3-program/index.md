@@ -4,6 +4,9 @@ date: 2021-11-18
 resources:
   - name: teaser
     src: card.jpg
+    params:
+      isBanner: true
+      alt: "Banner \"We are (a)live\""
 ---
 
 Liebe Astronaut*in,
@@ -31,5 +34,3 @@ Für alle Veranstaltungen gilt 2G plus tagesaktuellem Test. Wir gehen erstmal da
 Wir freuen uns sehr darauf, dich bei einem der Programmpunkte oder im DeepSpace zu sehen.
 
 Dein KalkSpace Team
-
-![Banner "We are (a)live"](./card.jpg)

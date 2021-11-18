@@ -14,6 +14,11 @@
 {{ define "content" }}
     <div class="container pt-md-5 my-5 blog-content">
         {{ .Content }}
+        {{ range $img := .Resources.ByType "image" }}
+        {{ if $img.Params.IsBanner -}}
+            <img src="{{ $img.Permalink }}" alt="{{ $img.Params.Alt }}" class="banner" />
+        {{ end -}}
+        {{ end -}}
         {{ partial "comments" . }}
         <a href="/blog" title="unser Blog">zurück zur Übersicht</a>
     </div>

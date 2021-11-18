@@ -9,10 +9,11 @@
             {{ $blogPages :=  where .Site.Pages "Section" "blog"}}
             {{ $blogPages = where $blogPages "Kind" "page" }}
             {{ $blogPages = sort $blogPages "Date" "desc" }}
-            {{ $latestBlogPost := index $blogPages 0 }}
-            <h2 class="plain">{{ $latestBlogPost.Title | htmlUnescape }}</h2>
-            <div class="plain blog-content">{{ $latestBlogPost.Content }}</div>
-            <a href="{{ (.Site.GetPage "section" "blog").Permalink }}">weiterlesen...</a>
+            {{ with index $blogPages 0 }}
+            <h2 class="plain">{{ .Title | htmlUnescape }}</h2>
+            <div class="plain blog-content">{{ .Content }}</div>
+            <a href="{{ .Permalink }}">weiterlesen...</a>
+            {{ end }}
         </div>
       </div>
     </div>
