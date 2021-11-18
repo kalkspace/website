@@ -6,8 +6,6 @@ resources:
     src: card.jpg
 ---
 
-# Remote Chaos Experience @ KalkSpace
-
 Liebe Astronaut*in,
 
 begleitend zur [Remote Chaos Experience (rC3)](https://events.ccc.de/2021/11/08/rc3-2021-nowhere/) vom CCC machen wir Ende des Jahres eine Veranstaltungsreihe im KalkSpace.
