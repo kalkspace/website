@@ -21,6 +21,10 @@ Im DeepSpace laufen den ganzen Tag die Vorträge vom Chaos Computer Club Event a
 
 Folgende Programmpunkte sind schon fertig geplant - andere kommen mit der Zeit noch hinzu.
 
+- 27.12. 16.00 - 18.00 Workshop: [**Einstieg in Rust**](https://discuss.kalk.space/t/workshop-rust-lang/650)
+
+- 28.12. 12.00 - 14.00 Workshop: [**Orca Einführung**](https://discuss.kalk.space/t/planung-workshop-orca-einfuehrung/665)
+
 - 28.12. 14.00 - 16.00 Workshop: [**f.u.c.k. Fluchen und Sticken**](https://discuss.kalk.space/t/workshop-f-u-c-k-fluchen-sticken/628)
 
 - 29.12. 10.00 - 14.00 Workshop: [**HeboCon Kids**](https://discuss.kalk.space/t/workshop-mini-hebocon/629)
