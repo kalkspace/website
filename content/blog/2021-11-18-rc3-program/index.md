@@ -31,6 +31,8 @@ Folgende Programmpunkte sind schon fertig geplant - andere kommen mit der Zeit n
 
 - 29.12. 14.00 - 18.00 Workshop: [**HeboCon**](https://discuss.kalk.space/t/workshop-hebocon/630/2) (Fight ab 21.00)
 
+- 30.12. 12.00 - 14.00 Vortrag: [**NFTs and the End of Capitalism**](https://discuss.kalk.space/t/talk-remote-nfts-and-the-end-of-capitalism/659)
+
 - 30.12. 14.00 - 16.00 Vortrag: [**Nachhaltiges Design**](https://discuss.kalk.space/t/workshop-gruenes-webdesign-nachhaltiges-design-fuer-einen-positiveren-digitalen-fussabdruck/634)
 
 Für alle Veranstaltungen gilt 2G plus tagesaktuellem Test. Wir gehen erstmal davon aus, dass das Event vor Ort stattfinden kann, passen uns aber natürlich den Gegebenheiten an.
