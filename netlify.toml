@@ -1,8 +1,8 @@
 [build]
-  publish = "public/"
-  command = "yarn build"
-  functions = "functions"
+publish = "public/"
+command = "yarn build"
+functions = "functions"
 
 [build.environment]
-  HUGO_VERSION = "0.67.1"
-  TZ = "Europe/Berlin"
+HUGO_VERSION = "0.67.1"
+TZ = "Europe/Berlin"
