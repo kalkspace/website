@@ -9,5 +9,5 @@ TZ = "Europe/Berlin"
 
 [[redirects]]
 from = "/hebocon"
-to = "https://discuss.kalk.space/t/workshop-hebocon/630"
+to = "https://bbb.kalk.space/b/kal-kpg-ink"
 status = 302
