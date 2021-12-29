@@ -6,3 +6,8 @@ functions = "functions"
 [build.environment]
 HUGO_VERSION = "0.67.1"
 TZ = "Europe/Berlin"
+
+[[redirects]]
+from = "/hebocon"
+to = "https://discuss.kalk.space/t/workshop-hebocon/630"
+status = 302
