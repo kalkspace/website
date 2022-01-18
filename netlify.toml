@@ -6,3 +6,9 @@ functions = "functions"
 [build.environment]
 HUGO_VERSION = "0.67.1"
 TZ = "Europe/Berlin"
+
+[[redirects]]
+from = "/kegelbahn"
+to = "https://bbb.kalk.space/b/kal-kpg-ink"
+status = 301
+force = true
