@@ -8,7 +8,7 @@
   "dependencies": {
     "@webcomponents/webcomponentsjs": "^2.1.1",
     "bootstrap": "^4.1.3",
-    "node-fetch": "^2.6.1",
+    "node-fetch": "^2.6.7",
     "wired-elements": "^0.7.2"
   },
   "scripts": {
